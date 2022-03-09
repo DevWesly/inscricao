@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <style>
+        *{  box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: 333;
+        }
+        main {
+            background-color: #F0F0F0;
+            width: 400px;
+            min-height: 300px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+        }
+        input, select{
+            border: 1px #F0F0F0 solid;
+            padding: 5px;
+            display: block;
+            width: 100%;
+        }
+        fieldset{
+            border: 1px #999 solid;
+        }
+        label{
+            margin-bottom: 5px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- o nome -->
+        <label> Nome:
+            <input type="text" placeholder="Digite seu nome" required>
+        </label>
+
+        <!-- e-mail -->
+        <label>
+            e-mail:
+            <input type="email" 
+            name=""
+            id=""
+            placeholder="digite seu e-mail aqui">
+        </label>
+
+        <!-- senha -->
+        <label>
+            Senha:
+            <input
+             type="password"
+             name=""
+             id=""
+             placeholder="digite sua senha">
+        </label>
+
+
+        <!-- confirmação de senha -->
+        <label>
+            Repita a Senha:
+            <input 
+            type="password"
+            name=""
+            id="csenha"
+            placeholder="digite sua senha novamente">
+        </label>
+        <!-- data de nascimento -->
+        <label>
+            Nascimento:
+            <input type="date" id="datanascimento">
+        </label>
+
+        <!-- estado -->
+        <label> Estado:
+            <select name="" id="estado">
+                <option disabled> Escolha um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+            
+        </label>
+
+
+        <!-- cidade -->
+        <label> Cidade:
+            <select name="" id="cidade">
+                <option value="">
+                </option>
+            </select>
+        </label>
+        <!-- numero de filhos -->
+        <label> 
+            Numero de Filhos:
+            <input type="number" value="0" max="17" min="0">
+        </label>
+
+        <!-- Meio de contato preferido: Telefone, whatsapp, SMS ou email -->
+        <fieldset>
+            <legend>Meios de contato</legend>
+            <label> 
+                <input name="meioDecontato" type="radio">Whatsapp
+            </label>
+            <label> 
+                <input name="meioDecontato" type="radio">e-mail
+            </label>
+            <label> 
+                <input name="meioDecontato" type="radio">SMS
+            </label>
+            <label> 
+                <input name="meioDecontato" type="radio">Telefone
+            </label>
+        </fieldset>
+
+
+        <!-- Disponibilidade: Manhã, tarde, noite -->
+        <!-- type="checkbox"-->
+
+        <!-- Upload de imagem -->
+        <!-- type="file"-->
+
+    </main>
+
+</body>
+
+</html>
